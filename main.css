@@ -1,0 +1,291 @@
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+body{ 
+    font-family: 'Courier New', Courier, monospace; 
+    background: black;
+    color: lime;
+    display:flex;
+}
+h1,h2,h3,h4,h5,h6,select{
+    width:50%;
+    margin:24px auto;
+    font-weight: 400;
+    display:block
+} 
+
+h1{
+    color:lime;
+    text-transform: uppercase; 
+}
+
+h2{
+    margin:64px auto;
+    font-size:24px;
+    padding:16px 0;
+    text-align:center;
+    border: 1px dotted lime
+}
+
+h3{
+    margin:64px auto;
+    font-size:24px;
+    padding-bottom:16px;
+    border-bottom: 1px dotted lime
+}
+
+/* display: flex */
+.aside{
+    position:fixed;
+}
+.aside ul{
+    list-style:none;
+}
+.aside a {
+    color: lime;
+    text-decoration:none
+}
+.aside a:hover {
+    opacity:.8
+}
+.container{
+    width:50%;
+    height:auto;
+    min-height:200px;
+    background: transparent;
+    border: 1px dotted lime;
+    margin:0 auto;
+    display: flex; 
+}
+
+/* flex-direction */
+
+.flex-direction-row{ 
+    flex-direction: row
+}
+
+.flex-direction-row-reverse{ 
+    flex-direction: row-reverse
+}
+
+.flex-direction-column{ 
+    flex-direction: column
+}
+
+/* flex-wrap */
+
+.flex-nowrap{ 
+    flex-wrap: nowrap
+}
+
+.flex-wrap {   
+    flex-wrap: wrap
+}
+
+.flex-wrap-reverse {   
+    flex-wrap: wrap-reverse
+}
+
+/* flex-flow */
+
+.flex-flow-row-wrap{
+    flex-flow: row wrap;
+}
+
+.flex-flow-column-wrap{
+    flex-flow: column wrap;
+}
+
+/* justify-content */
+
+.justify-content-flex-start{
+    justify-content: flex-start
+}
+
+.justify-content-flex-end{
+    justify-content: flex-end
+}
+.justify-content-center{
+    justify-content: center
+}
+.justify-content-space-between{
+    justify-content: space-between
+}
+.justify-content-space-around{
+    justify-content: space-around
+}
+
+/* align-items */
+
+.align-items-flex-start{
+    align-items: flex-start
+}
+
+.align-items-flex-end{
+    align-items: flex-end
+}
+
+.align-items-center{
+    align-items: center
+}
+
+.align-items-stretch{
+    align-items: stretch
+}
+
+.align-items-baseline{
+    align-items: baseline
+}
+
+/* align-content */ 
+.align-content-flex-start{
+    align-content: flex-start
+}
+.align-content-flex-end{
+    align-content: flex-end
+}
+.align-content-center{
+    align-content: center
+}
+.align-content-space-between{
+    align-content: space-between
+}
+.align-content-space-around{
+    align-content: space-around
+}
+
+.item{
+    background: transparent;
+    border:1px dotted lime;
+    margin:12px;
+    width:100px;
+    height:50px;
+    color: lime; 
+    padding:5px;
+    font-size:16px;
+    text-align:center; 
+}
+
+/* flex-grow */ 
+.flex-grow-1{
+    flex-grow: 1
+}
+.flex-grow-4{
+    flex-grow: 4
+}
+.flex-grow-8{
+    flex-grow: 8
+}
+
+/* flex-shrink */
+.flex-shrink-0{
+    flex-shrink: 0 
+}
+
+/* flex-basis-auto*/
+.flex-basis-300{
+    flex-basis: 300px;
+}
+.flex-basis-100{
+    flex-basis: 100%;
+}
+
+/* flex */
+.flex {
+    flex: 1 1 300px; 
+}
+
+/* order */
+.order-1{
+    order: 1
+}
+.order-2{
+    order: 2
+}
+
+/* align-self */
+.align-self-flex-start{
+    align-self: flex-start;
+}
+.align-self-flex-end{
+    align-self: flex-end;
+}
+.align-self-center{
+    align-self: center;
+}
+.align-self-stretch{
+    align-self: stretch;
+}
+
+.align-items-stretch .item,
+.item.align-self-stretch {
+    height:auto!important;
+}
+
+.main{
+    display:flex; 
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;;
+    padding: 8px;
+    text-align: center;
+}
+
+.header,.article,.aside,.footer{
+    margin: 8px;
+    padding:16px;
+    border-radius:2px;
+    color: white;
+}
+
+.header{
+    background: #9b59b6
+}
+
+.article{
+    background: #2ecc71
+}
+
+.aside.left{
+    background: #34495e
+}
+
+.aside.right{
+    background: #2c3e50
+}
+
+.footer{
+    background: #8e44ad 
+}
+
+@media (min-width:600px){
+    .aside{
+        flex: 1 1;
+    }
+}
+
+@media (min-width:800px){
+    .aside.left{
+        order: 1
+    }
+    .article{
+        flex: 2 0;
+        order: 2;
+    }
+    .aside.right {
+        order: 3;
+    }
+    .footer{
+        order:4
+    }
+}
+
+@media (max-width:768px){
+    h1,h2,h3,h4,h5,h6, .container, select{
+        width:100%;
+    }
+}
