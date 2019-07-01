@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="aside">
+
+        <h1>Flexbox</h1>
+
+        <ul id="select"></ul>
+        
+    </div>
+
+    <div class="content">
+
+        <!-- flex-direction -->
+
+        <h2>Parent element (container)</h2>
+
+        <div>
+
+            <h3>flex-direction</h3>
+
+            <h4> flex-direction : row</h4>
+
+            <div class="container">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+            </div>
+
+            <h4> flex-direction : row-reverse</h4>
+
+            <div class="container flex-direction-row-reverse">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+            </div>
+            
+            <h4> flex-direction : column</h4>
+
+            <div class="container flex-direction-column">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+            </div>
+
+        </div>
+
+        <!-- flex-wrap -->
+        <div>
+
+            <h3>flex-wrap</h3>
+
+            <h4> flex-wrap : nowrap</h4>
+
+            <div class="container">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div class="item">E</div>
+                <div class="item">F</div> 
+            </div>
+
+            <h4> flex-wrap : wrap</h4>
+
+            <div class="container flex-wrap">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div class="item">E</div>
+                <div class="item">F</div> 
+            </div>
+    
+            <h4> flex-wrap : wrap-reverse</h4>
+
+            <div class="container flex-wrap-reverse">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div class="item">E</div>
+                <div class="item">F</div> 
+            </div>
+        
+        </div>
+
+        <!-- flex-flow -->
+        <div>
+
+            <h3>flex-flow</h3>
+
+            <h4>flex-flow: row wrap</h4>
+
+            <h5> (flex-flow = flex-direction + flex-wrap)</h5>
+
+            <div class="container flex-flow-row-wrap">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div class="item">E</div>
+                <div class="item">F</div> 
+            </div>
+
+            <h4>flex-flow: column wrap</h4>
+
+            <h5> (flex-flox = flex-direction + flex-wrap)</h5>
+
+            <div class="container flex-flow-column-wrap">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div class="item">E</div>
+                <div class="item">F</div> 
+            </div>
+
+        </div>
+
+        <!-- justify-content -->
+        <div>
+            <h3>justify-content</h3>
+            <h4> justify-content : flex-start</h4>
+
+            <div class="container">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div> 
+            </div>
+            <h4> justify-content : flex-end</h4>
+
+            <div class="container justify-content-flex-end">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div> 
+            </div>
+            <h4> justify-content : center</h4>
+
+            <div class="container justify-content-center">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div> 
+            </div>
+            <h4> justify-content : space-between</h4>
+
+            <div class="container justify-content-space-between">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div> 
+            </div>
+            <h4> justify-content : space-around</h4>
+
+            <div class="container justify-content-space-around">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div> 
+            </div>
+        </div>
+
+        <!-- align-items -->
+        <div>
+            <h3>align-items</h3>
+            <h4>align-items : flex-start</h4>
+            <div class="container align-items-flex-start">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div> 
+            </div>
+            <h4>align-items : flex-end</h4>
+            <div class="container align-items-flex-end">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div> 
+            </div>
+            <h4>align-items : center</h4>
+            <div class="container align-items-center">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div> 
+            </div>
+            <h4>align-items : stretch</h4>
+            <div class="container align-items-stretch">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div> 
+            </div>
+            <h4>align-items : baseline</h4>
+            <h5> (align at typography baseline) </h5>
+            <div class="container align-items-baseline">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item" style="font-size:32px">C</div> 
+            </div>
+        </div>
+
+        <!-- align-content -->
+        <div>
+            <h3>align-content</h3> 
+            <h4> align-content : flex-start</h4>
+            <div class="container flex-wrap align-content-flex-start">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div> 
+                <div class="item">D</div>
+                <div class="item">E</div> 
+                <div class="item">F</div>
+                <div class="item">G</div> 
+            </div>
+            <h4> align-content : flex-end</h4>
+            <div class="container flex-wrap align-content-flex-end">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div> 
+                <div class="item">D</div>
+                <div class="item">E</div> 
+                <div class="item">F</div>
+                <div class="item">G</div> 
+            </div>
+            <h4> align-content : center</h4>
+            <div class="container flex-wrap align-content-center">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div> 
+                <div class="item">D</div>
+                <div class="item">E</div> 
+                <div class="item">F</div>
+                <div class="item">G</div> 
+            </div>
+            <h4> align-content : space-between</h4>
+            <div class="container flex-wrap align-content-space-between">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div> 
+                <div class="item">D</div>
+                <div class="item">E</div> 
+                <div class="item">F</div>
+                <div class="item">G</div> 
+            </div>
+            <h4> align-content : space-around</h4>
+            <div class="container flex-wrap align-content-space-around">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div> 
+                <div class="item">D</div>
+                <div class="item">E</div> 
+                <div class="item">F</div>
+                <div class="item">G</div> 
+            </div>
+        </div>
+
+        <h2>Child elements (items)</h2>
+
+        <!-- flex-grow -->
+        <div>
+            <h3>flex-grow</h3>
+            <h4>A flex grow : 1, B flex-grow : 8, C flex-grow: 4</h4>
+            <h5>(  proportional grow basis width)</h5>
+            <div class="container flex-wrap">
+                <div class="item flex-grow-1">A</div>
+                <div class="item flex-grow-8">B</div>
+                <div class="item flex-grow-4">C</div>  
+            </div>
+        </div>
+
+        <!-- flex-shrink -->
+        <div>
+            <h3>flex-shrink</h3>
+            <h4>B with flex-shrink : 0</h4>
+            <h5>( dont shrink, fixed with from css )</h5>
+            <div class="container flex-nowrap">
+                <div class="item">A</div>
+                <div class="item flex-shrink-0">B</div>
+                <div class="item">C</div>  
+                <div class="item">D</div>  
+                <div class="item">E</div>  
+                <div class="item">F</div>  
+                <div class="item">G</div>  
+                <div class="item">H</div>  
+                <div class="item">I</div>  
+            </div>
+        </div>
+
+        <!-- flex-basis -->
+        <div>
+            <h3>flex-basis</h3>
+            <h4>E with flex-basis : 300px</h4>
+            <h5>( flex-basis from width )</h5>
+            <div class="container align-items-stretch">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>  
+                <div class="item">D</div>  
+                <div class="item flex-basis-300">E</div>  
+            </div>
+        </div>
+
+        <!-- flex -->
+        <div>
+            <h3>flex</h3>
+            <h4>B with flex : 1 1 300px</h4>
+            <h5>( shorthand flex-grow, flex-shrink, flex-basis)</h5>  
+            <div class="container flex-wrap">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item flex">D</div>
+                <div class="item">E</div>
+                <div class="item">F</div>
+            </div>
+        </div>
+
+        <!-- order -->
+        <div>
+            <h3>order</h3>
+            <h4>
+                A order : 2 <br> 
+                B order : 2 <br>
+                C order : 1
+            </h4>
+            <div class="container">
+                <div class="item order-2">A</div>
+                <div class="item order-2">B</div>
+                <div class="item order-1">C</div> 
+            </div>
+        </div>
+
+        <!-- order -->
+        <div>
+            <h3>align-self</h3>
+            <h4>
+                A align-self : flex-start (default) <br> 
+                B align-self : center <br>
+                C align-self: flex-end <br>
+                C align-self: stretch
+            </h4>
+            <div class="container">
+                <div class="item align-self-flex-start">A</div>
+                <div class="item align-self-center">B</div> 
+                <div class="item align-self-flex-end">C</div> 
+                <div class="item align-self-stretch">D</div> 
+            </div> 
+        </div>
+    
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
